@@ -1,8 +1,9 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCESS_KEY_ID = credentials('jenkins-access-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('jenkins-secret-access-key')
+        AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
+        
         AWS_S3_BUCKET = "artifact-bucket-repo-3"
         ARTIFACT_NAME = "hello-world.dll"
         AWS_EB_APP_NAME = "dotnet-jenkins"
