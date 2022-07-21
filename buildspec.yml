@@ -28,5 +28,5 @@ phases:
 
 artifacts:
   files:
-    - helloworld.dll
-  name: hello-world-artifact
+    - ROOT.dll
+  name: dotnet-artifat
